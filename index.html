@@ -493,7 +493,6 @@
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
     <script >
-        document.querySelector("form").addEventListener("submit", handleSubmit);
 
             const handleSubmit = (e) => {
             e.preventDefault()
@@ -506,6 +505,8 @@
             }).then(() => console.log('Form successfully submitted')).catch((error) =>
                 alert(error))
             }
+        document.querySelector("form").addEventListener("submit", handleSubmit);
+
     </script>
   
               
