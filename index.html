@@ -354,7 +354,7 @@
                     <div class="first card wow bounceInDown"data-wow-delay=".5s" >
                         <div class=" card-body">
                             <h2 class="card-title">Soziales Engagement</h2>
-                            <h6 class="card-subtitle mb-2 text-muted">01/2012-03/2020</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">01/2020-03/2020</h6>
                             <h5>AEISEC</h5>
                             <p class="card-text">Während des DSH-Kurses an der TUK habe ich mich mit AEISEC KL im Marketing-Team beschäftigt. Es war eine meiner besten Herausforderungen. Ich habe so viele Leute kennengelernt und meine Grafik Fähigkeiten verbessert. </p>
                             
@@ -410,7 +410,7 @@
     
     <div class="contact">
         <div class="container">
-            <form method="POST" id="validate" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form" novalidate="novalidate" netlify>
+            <form method="POST"  data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form" novalidate="novalidate" netlify>
                 <div class="text row">
                     <div class=" col-md-8 text-center text-md-left" >
                         <p >Do you like my website ?? Let's talk</p>
@@ -492,25 +492,7 @@
     <script src="js/portfolio.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
-    <script >
-
-            const handleSubmit = (e) => {
-            e.preventDefault()
-            let myForm = document.getElementById('validate');
-            let formData = new FormData(myForm)
-            fetch('/', {
-                method: 'POST',
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
-            }).then(() => console.log('Form successfully submitted')).catch((error) =>
-                alert(error))
-            }
-        document.querySelector("form").addEventListener("submit", handleSubmit);
-
-    </script>
+    
   
-              
-    
-    
 </body>
 </html>
