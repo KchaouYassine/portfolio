@@ -410,7 +410,7 @@
     
     <div class="contact">
         <div class="container">
-            <form method="POST" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form" novalidate="novalidate" netlify>
+            <form method="POST" id="validate" data-netlify="true" data-netlify-honeypot="bot-field" name="contact-form" novalidate="novalidate" netlify>
                 <div class="text row">
                     <div class=" col-md-8 text-center text-md-left" >
                         <p >Do you like my website ?? Let's talk</p>
@@ -492,6 +492,21 @@
     <script src="js/portfolio.js"></script>
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+    <script >
+        document.querySelector("form").addEventListener("submit", handleSubmit);
+
+            const handleSubmit = (e) => {
+            e.preventDefault()
+            let myForm = document.getElementById('validate');
+            let formData = new FormData(myForm)
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+            }).then(() => console.log('Form successfully submitted')).catch((error) =>
+                alert(error))
+            }
+    </script>
   
               
     
