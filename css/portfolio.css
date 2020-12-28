@@ -1,0 +1,573 @@
+
+/* begin loadingOverlay*/
+body{overflow: hidden;}
+.loadingOverlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-color: #0f0b0b;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    z-index: 9999;
+    overflow: hidden;   
+ 
+   
+    
+}
+.loadingOverlay .spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+    
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+/* end loadingOverlay*/
+
+
+/* begin scroll_to_top*/
+.scrollToTop{
+    background-color: #333;
+    color: #EEE;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 0px 5px;
+    display:none;
+    z-index: 9999;
+}
+/* end scroll_to_top*/
+
+
+.right{
+    background-color: rgb(3, 117, 161);
+    width:80%;
+    margin-left: -33px;
+    margin-bottom: 20px;
+
+}
+
+.left{
+    background-color: rgb(3, 117, 161);
+    width:80%;
+    margin-left: 208px;
+    margin-bottom: 20px;
+}
+
+.unterschrift{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    
+}
+/* begin navbar1*/
+.navbar1{
+    background-color: rgb(3, 117, 161);
+    color: #fff;
+    padding:10px;
+    
+}
+.navbar1 p{
+    display: inline-block;
+    margin:2px ;
+}
+.navbar1 .reglage i{
+    margin:0 2px;
+}
+.navbar1 .reglage span{
+    color:#bfc6c9;
+}
+.navbar1 .reglage .get_quote{
+    color:#fff;
+    display: inline-block;
+    border:2px solid #ec1c23;
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+/* end navbar1*/
+
+/*begin navbar2*/
+.navbar2{
+    padding:5px auto;
+    
+}
+.navbar2 .navbar span:first-child{
+    color: rgb(177, 4, 4);
+}
+.navbar2 .navbar span:last-child{
+    color: rgb(3, 117, 161);
+    font-weight: bold;
+}
+.navbar-nav .nav-link{
+    margin-left: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#bfc6c9;
+}
+.navbar-nav .nav-link.active{
+    color: rgb(177, 4, 4) !important;
+    
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+/*end navbar2*/
+/* begin slider*/
+
+.slider-inner{
+    position: relative;
+    background-image: url("image/effect2.jpg") ;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30PX;
+}
+.slider .slider-inner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+.slider .slider-inner .schrift{
+    position: absolute;
+    z-index: 3; 
+    
+    padding: 46px;
+    align-items:center;
+}
+.slider .slider-inner .schrift h1{
+    
+    font-weight: bold;
+    color: #51aa3a;
+    font-size: 47px;
+}
+@media(max-width:576px){
+    .slider .slider-inner .schrift h1{
+        font-size: 31px;
+    }
+    .slider .slider-inner .schrift{
+        padding: 33px 20px;
+    }
+}
+.slider .slider-inner .schrift p{
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+}
+@media(max-width:576px){
+    .slider .slider-inner .schrift p{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.2;
+        margin-top: 23px;
+    }
+}
+.slider .slider-inner .schrift .drittelinie{
+    margin-left: 43px;
+}
+.slider .slider-inner .schrift .drittelinie span{
+    display: inline-block;
+    background-color:#ec1c23;
+    padding: 2px 10px;
+}
+
+/* end slider*/
+/* begin überMich*/
+
+.uberMich p{
+    color:rgb(145, 143, 143) ;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 80%;
+    margin:0 auto 60px;
+
+}
+@media(max-width:768px){
+    
+    .uberMich p{
+        font-size: 19px;
+        line-height: 1.3;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+/* end überMich*/
+/*begin Studium*/
+.studium{
+    background-color:#f0f5f7;
+    padding:30px;
+    margin-bottom: 30px;
+}
+
+.righttext{
+    color: rgb(177, 4, 4);
+    font-size: 33px;
+    margin:28px 10px 0;
+}
+.studium .studium-inner .right span{
+    color: #fff;
+    
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0 10px;
+}
+.rightparag{
+    color: #fff;
+    line-height: 1.3;
+    margin: 2px 10px;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.lefttext{
+    color: rgb(177, 4, 4);
+    font-size: 33px;
+    margin:17px 30px 0;
+}
+.studium .studium-inner .left span{
+    color: #fff;
+    
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0 30px;
+}
+.leftparag{
+    color: #fff;
+    line-height: 1.3;
+    margin: 17px 30px 0;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+
+   
+
+/*end Studium*/
+/*begin hobbies*/
+.hobbies{
+    margin-bottom: 20px;
+}
+
+.hobbies .hobbie-inner i{
+    background-color: #ec1c23;
+    color:#fff;
+    padding: 12px;
+    margin-bottom: 5px;
+}
+.hobbies .hobbie-inner h3{
+    color: rgb(3, 117, 161);
+    margin-bottom: 25px;
+}
+.hobbies .hobbie-inner p{
+    color:rgb(145, 143, 143);
+    margin-bottom: 10px;
+    margin-bottom: 25px;
+}
+/* end hobbies*/
+/*begin fähigkeiten*/
+.fähigkeiten{
+    background-color:#f0f5f7;
+    padding:30px;
+    margin-bottom: 30px;
+}
+
+/*.fähigkeiten .fähigkeiten-inner .right h3{
+    color:rgb(177, 4, 4);
+    font-size: 28px;
+    margin:20px 10px 15px;
+    
+
+}
+.fähigkeiten .fähigkeiten-inner .right p{
+    color: #fff;
+    line-height: 1.5;
+    margin: 0 10px;
+   
+}
+.fähigkeiten .fähigkeiten-inner .left h3{
+    color:rgb(177, 4, 4);
+    font-size: 28px;
+    margin:17px 10px 15px 40px;
+    
+
+}
+.fähigkeiten .fähigkeiten-inner .left p{
+    color: #fff;
+    line-height: 1.5;
+    margin: 0px 10px 3px 40px;;
+    
+}*/
+
+
+
+/*end fähigkeiten*/
+
+/* begin engagement*/
+
+.card{
+    margin-bottom: 10px;
+   
+}
+.card-body{
+    padding:0;
+}
+.first{
+    margin-top: 10px;
+    
+}
+
+.second{
+    margin-top: -30px;
+    
+}
+
+.engagement .text {
+    color: rgb(104, 100, 100);
+    font-size: 19px;
+    line-height: 1.5;
+    margin-bottom: 60px
+}
+.engagement h2 {
+    font-size: 20px;
+    padding-top: 25px;
+    color:rgb(3, 117, 161);
+    
+}
+.engagement .card-body h6{
+    color:rgb(104, 100, 100);
+    font-size: small;
+    margin-bottom: 13px !important
+}
+.engagement .first .card-body h5{
+    color:rgb(3, 117, 161);
+    margin-bottom: 6px;
+    font-size: 30px;
+    text-align: center;
+    background-color:rgb(235, 232, 232) ;
+
+}
+.engagement .first .card-body a{
+    background-color:#ec1c23;
+    font-size: 400;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+}
+.engagement .second .card-body h5{
+    color:#fff;
+    margin-bottom: 6px;
+    font-size: 30px;
+    text-align: center;
+    background-color:#ec1c23 ;
+
+}
+.engagement .second .card-body a{
+    background-color:rgb(3, 117, 161);
+    font-size: 400;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+}
+.engagement .card-body .card-text{
+    color: rgb(12, 11, 11);
+    margin: 20px 8px;
+}
+
+/* end engagement*/
+/*begin contact*/
+.contact{
+    margin-top: 30px;
+    height:180px;
+    color: #fff;
+    background-color: #ec1c23;
+    padding: 50px 0;
+}
+/*.contact .text{
+    line-height: 90px;
+    padding: 20px;
+}*/
+.contact p{
+    font-weight: 400;
+    
+    font-size: 33px;
+    
+    
+}
+.contact .send{
+    background-color: #ec1c23;
+    font-size: 25px;
+    
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 4px 20px;
+}
+.contact .theform{
+    
+    margin:  80px  auto 20px;
+    width: 80%;
+    
+}
+.contact .valid{
+    color:rgb(3, 117, 161) !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+.contact .error{
+    color:rgb(177, 4, 4)!important;
+    font-size: 14px;
+    font-weight: 700;
+    
+}
+
+
+/* end concat*/
+
+/* begin copy*/
+.copy{
+    background-color: rgb(3, 117, 161);
+    color:#bfc6c9;;
+    margin-top: 266px;
+    padding: 10px;
+}
+/* end copy*/
+
+/* media*/
+@media(max-width:768px){
+    .right{
+        margin:10px auto;
+        width:auto;
+    }
+    .left{
+        margin:10px auto;
+        width:auto;
+    }
+}
+@media(max-width:768px){
+    .unterschrift{
+        margin-bottom: 0;
+        font-size: 36px;
+    }
+}
+@media(max-width:768px){
+    .righttext{
+        font-size: 33px;
+        margin: 15px 10px 0;
+    }
+    .studium .studium-inner .right span{
+        font-size: 11px;
+    }
+    .rightparag{
+        line-height: 1.3;
+        margin: 2px 10px;
+        
+        font-size: 15px;
+    }
+    .lefttext{
+        font-size: 33px;
+        margin: 15px 30px 0;
+    }
+    .studium .studium-inner .left span{
+        font-size: 11px;
+    }
+    .leftparag{
+        line-height: 1.3;
+        margin: 2px 30px;
+       
+        font-size: 15px;
+    }
+    /*engagement*/
+    .first {
+        margin-top: 0;
+        
+    }
+    .second{
+        margin-top: 0;
+    }
+    .engagement .text{
+        margin-bottom: 27px;
+    }
+    /* contact*/
+    .contact p{
+        font-size: 22px;
+
+    }
+    .contact .send{
+        font-size: 17px;
+    }
+    .contact .theform{
+        margin: 50px auto 20px;
+    }
+    .copy{
+        margin-top: 224px;
+    }
+    .copy .copytext{
+        font-size: 13px;
+    }
+
+    
+}
+@media(max-width:576px){
+    .copy{
+        margin-top: 257px;
+    }
+    .copy .copytext{
+        font-size: 9px;
+    }
+   
+    .navbar-nav .nav-link{
+        margin-bottom: -8px;
+   
+    }
+}
+
+
